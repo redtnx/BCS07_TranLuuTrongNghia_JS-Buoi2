@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS Buổi 2 - TLTN</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="BT1">
+        <h1>Bài tập 1: Tính tiền lương nhân viên</h1>
+        <h3>
+          Viết chương trình tính tiền lương nhân viên. <br />
+          Lương 1 ngày 100.000vnd. <br />
+          Cho người dùng nhập vào số ngày làm. <br />
+          Công thức tính lương: Lương 1 ngày * số ngày làm.
+        </h3>
+        <div class="mb-3">
+          <label for="" class="form-label">Vui lòng nhập số ngày công</label>
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soNgayCong"
+            placeholder="Số ngày công"
+          />
+        </div>
+        <button id="tinhLuong" class="btn btn-success">Tính lương</button>
+        <p id="tongLuong"></p>
+      </div>
+
+      <div class="BT2">
+        <h1>Bài tập 2: Tính giá trị trung bình</h1>
+        <h3>
+          Viết chương trình nhập vào 5 số thực. <br />
+          Tính giá trị trung bình của 5 số này rồi xuất ra màn hình. <br />
+          Gợi ý: Giá trị trung bình là tổng 5 số người dùng nhập vào chia cho 5.
+        </h3>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soThuc1"
+            placeholder="Số thực 1"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soThuc2"
+            placeholder="Số thực 2"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soThuc3"
+            placeholder="Số thực 3"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soThuc4"
+            placeholder="Số thực 4"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soThuc5"
+            placeholder="Số thực 5"
+          />
+        </div>
+        <button id="tinhGiaTriTrungBinh" class="btn btn-success">
+          Tính giá trị trung bình
+        </button>
+        <p id="ketQuaTrungBinhCong"></p>
+      </div>
+
+      <div class="BT3">
+        <h1>Bài tập 3: Quy đổi tiền</h1>
+        <h3>
+          Giá USD hiện nay đang là 23.500VND. <br />
+          Viết chương trình quy đổi từ USD sang VND. <br />
+          Cho người dùng nhập vào số tiền USD. <br />
+          Tính và xuất ra số tiền sau quy đổi VND. <br />
+          Ví dụ: Người dùng nhập 2USD => Xuất ra 47.000VND.
+        </h3>
+        <div class="mb-3">
+          <label for="" class="form-label"
+            >Vui lòng nhập số tiền cần quy đổi:</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soUSD"
+            placeholder="USD"
+          />
+          <button id="doiTien" class="btn btn-success">Đổi tiền</button>
+          <p id="tienVND"></p>
+        </div>
+      </div>
+
+      <div class="BT4">
+        <h1>Bài tập 4: Tính chu vi, diện tích hình chữ nhật</h1>
+        <h3>
+          Viết chương trình nhập vào chiều dài và chiều rộng của hình chữ nhật.
+          <br />
+          Tính và xuất ra chu vi, diện tích của hình chữ nhật đó. <br />
+          Công thức: <br />
+          - Chu vi = (Dài + rộng) * 2 <br />
+          - Diện tích = Dài * rộng
+        </h3>
+        <div class="mb-3">
+          <label for="" class="form-label">Chiều dài</label>
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="chieuDai"
+            placeholder=""
+          />
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Chiều rộng</label>
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="chieuRong"
+            placeholder=""
+          />
+        </div>
+        <button id="tinhChuVi" class="btn btn-success">Tính chu vi</button>
+        <button id="tinhDienTich" class="btn btn-success">
+          Tính diện tích
+        </button>
+        <p id="ketQuaHCN"></p>
+      </div>
+
+      <div class="BT5">
+        <h1>Bài tập 5: Tính tổng kí số</h1>
+        <h3>
+          Viết chương trình nhập vào một số có 2 chữ số. (VD: 12, 44, 83) <br />
+          Tính tổng 2 kí số vừa nhập. <br />
+        </h3>
+        <div class="mb-3">
+          <label for="" class="form-label">Vui lòng nhập số có 2 chữ số:</label>
+          <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soCoHaiChuSo"
+            placeholder=""
+          />
+          <button id="tinhTongKiSo" class="btn btn-success">
+            Tính tổng kí số
+          </button>
+          <p id="tongKiSo"></p>
+        </div>
+      </div>
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
